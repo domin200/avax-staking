@@ -1,0 +1,80 @@
+/* 전체 배경색과 레이아웃을 맞추기 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0A0C26;
+  /* 전체 배경색 (어두운 배경) */
+}
+
+/* 중앙 카드 영역 스타일 */
+.content {
+  width: 450px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #1C1E3B;
+  /* 카드 배경색 (어두운 회색) */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #FFFFFF;
+  /* 텍스트 색상 흰색 */
+}
+
+/* 헤더 스타일 (타이틀) */
+h1 {
+  font-size: 24px;
+  color: #00D1FF;
+  /* 제목 색상 (밝은 청록색) */
+  margin-bottom: 20px;
+}
+
+/* 버튼 기본 스타일 */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background-color: #3D89B5;
+  /* 버튼 배경색 (밝은 파란색) */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* 버튼 hover 효과 */
+button:hover {
+  background-color: #287BA6;
+  /* hover시 버튼 색상 (어두운 파란색) */
+}
+
+/* 상태 텍스트 색상 */
+p {
+  font-size: 16px;
+  color: #D1D1D1;
+  /* 일반 텍스트 색상 (밝은 회색) */
+}
+
+/* 로딩 중 텍스트 스타일 */
+span {
+  font-size: 16px;
+  color: #F1C40F;
+  /* 로딩 중 텍스트 색상 (노란색) */
+}
+
+/* 완료된 상태 표시 텍스트 색상 */
+.completed {
+  font-size: 16px;
+  color: #27AE60;
+  /* 완료 표시 색상 (초록색) */
+}
+
+/* 상태 메시지 스타일 (에러, 성공 등) */
+.status-message {
+  font-size: 16px;
+  color: #E74C3C;
+  /* 에러 메시지 색상 (빨간색) */
+}
