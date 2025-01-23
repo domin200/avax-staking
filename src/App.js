@@ -392,13 +392,17 @@ const App = () => {
               <p className="text-gray-500">보유량</p>
               <p className="font-medium">{Number(formatEther(tokenBalance)).toFixed(2)} DIAO</p>
             </div>
-
             {Number(stakedAmount) > 0 && (
               <div className="space-y-2 p-4 bg-blue-50 rounded-lg">
                 <div className="flex justify-between items-center">
                   <p className="text-gray-600">스테이킹된 금액</p>
                   <p className="font-medium">{Number(formatEther(stakedAmount)).toFixed(2)} DIAO</p>
-                </div>  {timeLeft !== null && (
+                </div>
+                <div className="flex justify-between items-center">
+                  <p className="text-gray-600">예상 이자 (50%)</p>
+                  <p className="font-medium text-green-600">{(Number(formatEther(stakedAmount)) * 0.5).toFixed(2)} DIAO</p>
+                </div>
+                {timeLeft !== null && (
                   <p className="text-sm">
                     {timeLeft > 0 ? (
                       <span className="text-blue-600">
